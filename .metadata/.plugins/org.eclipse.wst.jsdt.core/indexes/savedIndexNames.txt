@@ -1,0 +1,10 @@
+INDEX VERSION 1.4+D:\InfectStatisticWeb\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+913239150.index
+1986980204.index
+4219703740.index
+90322493.index
+483985258.index
+1832562513.index
+422767118.index
+2146777258.index
+2660977602.index

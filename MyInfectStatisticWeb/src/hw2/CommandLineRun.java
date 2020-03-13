@@ -60,7 +60,7 @@ public class CommandLineRun {
 
 	// 用于处理单个文件的
 	public void process_data(File f) throws IOException {
-		BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(f), "UTF-8"));
+		BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(f), "GBK"));
 		String temp;
 		IncreaseInfo incInfo = new IncreaseInfo();
 		incInfo.date = f.getName().substring(0, f.getName().length()-8);
@@ -87,6 +87,9 @@ public class CommandLineRun {
 
 		// 进行数据读取并匹配，最后进行统计
 		while ((temp = reader.readLine()) != null) {
+			if (temp.isEmpty()) {
+				continue;
+			}
 			if (temp.charAt(0) == '/') {
 				continue;
 			}
@@ -94,7 +97,7 @@ public class CommandLineRun {
 			char flag = '0';
 			Pattern pattern;
 			Matcher matcher;
-
+			//System.out.println(temp);
 			// 数据匹配
 			for (int i = 0; i < 8; i++) {
 				pattern = Pattern.compile(type_list.get(i));

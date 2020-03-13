@@ -1,0 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
+<%@ page import="hw2.*"%>
+<%@ page import="java.util.*"%>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Insert title here</title>
+</head>
+<body>
+<%
+		String province = request.getParameter("yz");
+		if(province.equals("全国")){
+			request.setAttribute("province", "全国");
+			request.getRequestDispatcher("test.jsp").forward(request, response); 
+		}
+		else{
+			request.setAttribute("province", province);
+			request.getRequestDispatcher("test.jsp").forward(request, response); 
+		}
+		
+	%>
+</body>
+</html>

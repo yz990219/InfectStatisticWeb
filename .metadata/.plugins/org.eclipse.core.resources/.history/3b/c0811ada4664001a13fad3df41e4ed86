@@ -1,0 +1,47 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
+<%@ page import="hw2.*"%>
+<%@ page import="java.util.*"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<%
+	CommandLineRun cmd_run = (CommandLineRun)request.getAttribute("infos");
+	%>
+	<div>
+		<table>
+			<thead>
+				<tr>
+					<th>省名</th>
+					<th>确诊</th>
+					<th>疑似</th>
+					<th>治愈</th>
+					<th>死亡</th>
+				</tr>
+			</thead>
+			<tbody>
+				<%
+			ArrayList<Province> info = cmd_run.province_list;
+			for (Province p : info) {
+		%>
+
+				<tr>
+					<td><%=p.name%></td>
+					<td><%=p.ip%></td>
+					<td><%=p.sp%></td>
+					<td><%=p.cure%></td>
+					<td><%=p.dead%></td>
+				</tr>
+				<%
+			}
+		%>
+			</tbody>
+		</table>
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+package hw2;
+
+import java.util.ArrayList;
+
+import hw2.InfectStatistic.CommandLine.Arguments;
+import hw2.InfectStatistic.CommandLine.Command;
+
+public class CommandLine {
+	public Command command;
+	public Arguments arguments;
+	
+	//测试用
+	public void test() {
+		System.out.println("command:" + command.type );
+		System.out.println("arguments.log:" + arguments.log + "," + arguments.log_value);	
+		System.out.println("arguments.date:" + arguments.date + "," + arguments.date_value);	
+		System.out.println("arguments.out:" + arguments.out + "," + arguments.out_value);
+		System.out.println("arguments.type:" + arguments.type + "," + arguments.type_value);
+		System.out.println("arguments.province:" + arguments.province + "," + arguments.province_value);
+	}
+	
+	//一个命令所对应的实体类，本次作业只有一种命令list
+	static class Command{
+		//命令的类型，目前只有list
+		String type;
+		
+		//判断是否为list命令
+		public boolean is_list() {
+			if(this.type.equals("list")) {
+				return true;
+			}
+			else {
+				return false;
+			}	
+		}
+	}
+	
+	//一组参数对应的实体类，共有五种，分别为：
+	//-log，-date，-out，-type，-province
+	static class Arguments{
+		//五种参数，若命令行中有某参数则对应参数设为true表示激活
+		public boolean log;
+		public String log_value;
+		public boolean out;
+		public String out_value;
+		public boolean date;
+		public String date_value;
+		public boolean type;
+		public ArrayList<String> type_value;
+		public boolean province;
+		public ArrayList<String> province_value;
+		
+		//五种函数用于判断五种参数是否激活，返回值为对应Boolean型参数
+		public boolean is_log() {
+			return log;
+		}
+		
+		public boolean is_out() {
+			return out;
+		}
+		
+		public boolean is_date() {
+			return date;
+		}
+		
+		public boolean is_type() {
+			return type;
+		}
+		
+		public boolean is_province() {
+			return province;
+		}
+	}
+
+
+}
