@@ -1,0 +1,6 @@
+package hw2;
+import hw2.Province;
+public class IncreaseInfo {
+	public Province province;
+	public String date;
+}

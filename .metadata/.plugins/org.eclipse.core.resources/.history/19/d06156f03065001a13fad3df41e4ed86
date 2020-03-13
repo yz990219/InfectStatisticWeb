@@ -1,0 +1,64 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
+<%@ page import="hw2.*"%>
+<%@ page import="java.util.*"%>
+<%@ page import="java.io.File"%>
+<!DOCTYPE html>
+<html>
+<head>
+<title>日期选择</title>
+<style>
+#datechoose {
+	background: #FA2;
+	width: 700px;
+	height: 400px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	z-index: 11;
+	/*设定这个div的margin-top的负值为自身的高度的一半,margin-left的值也是自身的宽度的一半的负值.*/
+	/*宽为400,那么margin-top为-200px*/
+	/*高为200那么margin-left为-100px;*/
+	margin: -200px 0 0 -350px;
+}
+</style>
+</head>
+<body>
+	<div class="datechoose">
+		<form class="datechoose" action="index.jsp" method="post">
+			<%
+				ArrayList<String> fileNameList = new ArrayList<String>();
+				String[] temp;
+				String path = "D:\\InfectStatisticWeb\\MyInfectStatisticWeb\\WebContent\\log\\";
+				File name = new File(path);
+				temp = name.list();
+				if (name.isDirectory()) {
+					for (int i = 0; i < temp.length; i++) {
+						fileNameList.add(temp[i]);
+					}
+				}
+			%>
+			<div>日期选择</div>
+			<div>
+				<select name="date">
+					<%
+						for (int i = 0; i < fileNameList.size(); i++) {
+					%>
+					<option
+						value="<%=fileNameList.get(i).substring(0, fileNameList.get(i).length() - 8)%>">
+						<%=fileNameList.get(i).substring(0, fileNameList.get(i).length() - 8)%>
+					</option>
+					<%
+						}
+					%>
+				</select>
+			</div>
+			<div style="margin-top: 20px">
+				<button type="submit">选择</button>
+			</div>
+
+		</form>
+	</div>
+
+</body>
+</html>

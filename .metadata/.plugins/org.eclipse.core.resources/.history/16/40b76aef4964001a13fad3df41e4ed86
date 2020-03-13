@@ -1,0 +1,60 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
+<%@ page import="hw2.*"%>
+<%@ page import="java.util.*"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form></form>
+	<%
+		CommandLineRun cmd_run = (CommandLineRun) request.getAttribute("infos");
+	%>
+	<div>
+		<select>
+			<%
+				ArrayList<String> file_info = cmd_run.filename_list;
+				int count = 0;
+				for (String file : file_info) {
+			%>
+			<option value="<%=count%>"><%=file.substring(0,file.length()-8)%></option>
+			<%
+				count++;
+				}
+			%>
+		</select>
+		<table>
+			<thead>
+				<tr>
+					<th>省名</th>
+					<th>确诊</th>
+					<th>疑似</th>
+					<th>治愈</th>
+					<th>死亡</th>
+				</tr>
+			</thead>
+			<tbody>
+				<%
+					ArrayList<Province> info = cmd_run.province_list;
+					for (Province p : info) {
+				%>
+
+				<tr>
+					<td><%=p.name%></td>
+					<td><%=p.ip%></td>
+					<td><%=p.sp%></td>
+					<td><%=p.cure%></td>
+					<td><%=p.dead%></td>
+				</tr>
+				<%
+					}
+				%>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

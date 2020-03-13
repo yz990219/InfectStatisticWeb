@@ -1,0 +1,35 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
+<%@ page import="hw2.*"%>
+<%@ page import="java.util.*"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>省份日期详情选择</title>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/echarts.min.js"></script>
+<script type="text/javascript" src="js/map/china.js"></script>
+</head>
+<body>
+
+
+	
+		
+		<h1>你的选择是<%=request.getParameter("province_value") %></h1>
+			<form action="province.jsp"  id="province">
+				
+				<input id="province_value" name="province_value"
+					type="text" value="<%=request.getParameter("province_value") %>" >
+				<button type="submit">确定</button>
+			</form>
+
+		
+		
+	
+
+	
+</body>
+</html>

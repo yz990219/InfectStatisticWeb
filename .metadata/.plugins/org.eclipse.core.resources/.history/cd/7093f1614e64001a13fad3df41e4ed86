@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
+<%@ page import="hw2.*"%>
+<%@ page import="java.util.*"%>
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Insert title here</title>
+</head>
+<body>
+	<form class="loginForm" action="loginServlet" method="post">
+		<input type="hidden" name="type" value="login"/>
+            <div class="login_acount_text">日期选择</div>
+            <div class="loginInput ">
+                <span class="loginInputIcon ">
+                    <span class=" glyphicon glyphicon-user"></span>
+                </span>
+                <input id="name" name="name" placeholder="手机/会员名/邮箱" type="text">
+            </div>
+            <div style="margin-top:20px">
+                <button class="btn btn-block redButton" type="submit">登录</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

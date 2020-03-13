@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
+<%@ page import="hw2.*"%>
+<%@ page import="java.util.*"%>
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Insert title here</title>
+</head>
+<body>
+	<form class="loginForm" action="index.jsp" method="post">
+		<div>日期选择</div>
+		<div>
+			<select name="cars">
+				<option value="volvo">2020-01-23</option>
+				<option value="saab">2020-01-27</option>
+			</select> <input id="date" name="date" placeholder="例如2020-01-27" type="">
+		</div>
+		<div style="margin-top: 20px">
+			<button type="submit">选择</button>
+		</div>
+		</div>
+	</form>
+</body>
+</html>
