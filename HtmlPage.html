@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+   <title>某次疫情统计可视化的实现</title>
+
+    <link href="styles.css" type="text/css" rel="stylesheet"/>
+    </head>
+
+<body>
+
+<div id="base" >
+     <!-- 标题 (组合) -->
+      <div class="a ax_default"  data-left="52" data-top="-1" data-width="1160" data-height="647">
+
+        <!-- Unnamed (图像) -->
+        <div id="u1" class="ax_default">
+          <img id="u1_img" class="img" src="https://static.ws.126.net/163/f2e/news/virus_report/static/images/banner.53e59fc.png"/>
+          <div id="u1_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- 疫情统计 (矩形) -->
+        <div id="u2" class="ax_default _一级标题" data-label="疫情统计">
+          <div id="u2_div" class=""></div>
+          <div id="u2_text" class="text ">
+            <p><span>疫情统计</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 数据统计 (组合) -->
+      <div class="a ax_default"  data-left="149" data-top="475" data-width="989" data-height="620">
+
+        <!-- 统计总数据 (矩形) -->
+        <div id="u3" class="ax_default" >
+          <div id="u3_div" class=""></div>
+          <div id="u3_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- 总数据文字 (组合) -->
+        <div class="a ax_default"  data-left="179" data-top="500" data-width="884" data-height="521">
+
+          <!-- Unnamed (矩形) -->
+          <<div id="u4" class="ax_default _文本段落">
+            <div id="u4_div" ></div>
+            <div id="u4_text" class="text ">
+              <p><span>现有重症</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u5" class="ax_default _文本段落">
+            <div id="u5_div"></div>
+            <div id="u5_text" class="text ">
+              <p><span>现有疑似</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u6" class="ax_default _文本段落">
+            <div id="u6_div" class=""></div>
+            <div id="u6_text" class="text ">
+              <p><span>现有确诊</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u7" class="ax_default _文本段落">
+            <div id="u7_div" class=""></div>
+            <div id="u7_text" class="text ">
+              <p><span>累计治愈</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u8" class="ax_default _文本段落">
+            <div id="u8_div" class=""></div>
+            <div id="u8_text" class="text ">
+              <p><span>累计死亡</span></p>
+            </div>
+          </div>
+
+     
+         <!-- Unnamed (矩形) -->
+          <div id="u9" class="ax_default _文本段落">
+            <div id="u9_div" class=""></div>
+            <div id="u9_text" class="text ">
+              <p style="font-size:72px;"><span style="color:#EC808D;">41794</span></p>
+                <p style="font-size:13px;"><span style="color:#EC808D;"></span>
+                    <span style="font-size:16px;color:#AAAAAA;">昨日 </span>
+                    <span style="font-size:16px;color:#EC808D;">+3745</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u10" class="ax_default _文本段落">
+            <div id="u10_div" class=""></div>
+            <div id="u10_text" class="text ">
+              <p style="font-size:72px;"><span style="color:#7F7F7F;">14928</span></p>
+                <p style="font-size:16px;"><span style="color:#7F7F7F;">  </span>
+                    <span style="color:#AAAAAA;">昨日</span>
+                    <span style="color:#7F7F7F;"> +4729</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u11" class="ax_default _文本段落">
+            <div id="u11_div" class=""></div>
+            <div id="u11_text" class="text ">
+              <p style="font-size:72px;"><span style="color:#D9001B;">2105</span></p>
+                <p style="font-size:16px;"><span style="color:#D9001B;"> </span>
+                    <span style="color:#AAAAAA;">昨日</span><span style="color:#D7D7D7;"> </span>
+                    <span style="color:#D9001B;">+17</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u12" class="ax_default _文本段落">
+            <div id="u12_div" class=""></div>
+            <div id="u12_text" class="text ">
+              <p style="font-size:72px;"><span style="color:#78BF03;">7103</span></p>
+                <p style="font-size:16px;"><span style="color:#78BF03;"> </span>
+                    <span style="color:#AAAAAA;">昨日</span>
+                    <span style="color:#78BF03;"> +629</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u13" class="ax_default _文本段落">
+            <div id="u13_div" class=""></div>
+            <div id="u13_text" class="text ">
+              <p style="font-size:72px;"><span style="color:#66A9C5;">62375</span></p>
+                <p style="font-size:16px;"><span style="color:#66A9C5;"> </span>
+                    <span style="color:#AAAAAA;">昨日</span>
+                    <span style="color:#66A9C5;"> +5682</span></p>
+            </div>
+          </div>
+
+             <!-- Unnamed (矩形) -->
+          <div id="u14" class="ax_default _文本段落">
+            <div id="u14_div" class=""></div>
+            <div id="u14_text" class="text ">
+              <p><span>更新至 2020-02-27 14:00</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u15" class="ax_default label">
+            <div id="u15_div" class=""></div>
+            <div id="u15_text" class="text ">
+              <p><span>总数据统计</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  
+</body>
+</html>
