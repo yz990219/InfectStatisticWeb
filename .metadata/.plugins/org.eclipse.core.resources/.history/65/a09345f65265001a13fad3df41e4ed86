@@ -269,7 +269,7 @@
 						label : '确诊1-99人',
 					//color: '#f5bba7'
 					}, ],
-					
+					//不知道拿来干嘛
 					color : [ '#974236', '#f5bba7' ]
 				},
 				series : [ {
@@ -301,14 +301,14 @@
 						normal : {
 							borderWidth : .5, //区域边框宽度
 							borderColor : '#0550c3', //区域边框颜色
-							areaColor : "#ece39e", //区域颜色
+							areaColor : "#4ea397", //区域颜色
 
 						},
 
 						emphasis : {
 							borderWidth : .5,
 							borderColor : '#4b0082',
-							areaColor : "#00F5FF",
+							areaColor : "#ece39e",
 						}
 					},
 				} ]
