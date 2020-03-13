@@ -130,6 +130,7 @@ public class CommandLineRun {
 					break;
 				// (\\W+) (新增 疑似患者) (\\d+)(人)
 				case '2':
+					//累积数据
 					p = get_province(matcher.group(1));
 					p.sp += Integer.parseInt(matcher.group(3));
 					//新增数据
@@ -152,15 +153,23 @@ public class CommandLineRun {
 					break;
 				// (\\W+) (死亡) (\\d+)(人)
 				case '5':
+					//累积数据
 					p = get_province(matcher.group(1));
 					p.dead += Integer.parseInt(matcher.group(3));
 					p.ip -= Integer.parseInt(matcher.group(3));
+					//新增数据
+					pi = incInfo.getProvince(matcher.group(1));
+					pi.dead = Integer.parseInt(matcher.group(3));
 					break;
 				// (\\W+) (治愈) (\\d+)(人)
 				case '6':
+					//累积数据
 					p = get_province(matcher.group(1));
 					p.cure += Integer.parseInt(matcher.group(3));
 					p.ip -= Integer.parseInt(matcher.group(3));
+					//新增数据
+					pi = incInfo.getProvince(matcher.group(1));
+					pi.cure = Integer.parseInt(matcher.group(3));
 					break;
 				// (\\W+) (疑似患者 确诊感染) (\\d+)(人)
 				case '7':
@@ -209,11 +218,11 @@ public class CommandLineRun {
 		}
 	}
 
-	// 使用日期在新增信息列表获取省列表
-	public ArrayList<Province> getListByDate(String date) {
+	// 使用日期在新增信息列表获取省新增信息
+	public IncreaseInfo getInfoByDate(String date) {
 		for(int i = 0;i < increaseList.size();i++) {
 			if(increaseList.get(i).date.equals(date)) {
-				return increaseList.get(i).provinceList;
+				return increaseList.get(i);
 			}
 		}
 		return null;

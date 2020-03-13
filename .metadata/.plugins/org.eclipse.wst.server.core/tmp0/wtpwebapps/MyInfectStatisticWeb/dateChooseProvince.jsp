@@ -8,7 +8,7 @@
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
-<title>省份日期详情选择</title>
+<title><%=request.getParameter("province_value")%>省详情日期选择</title>
 <link href="css/datechoose.css" rel="stylesheet">
 
 </head>
