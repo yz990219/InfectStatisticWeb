@@ -24,47 +24,57 @@
 <html>
 <head>
 <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
-    <title>HTML5 Canvas实现中国地图DEMO演示</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>全国疫情地图</title>
+<style>
+#china-map {
+	width: 1000px;
+	height: 1000px;
+	margin: auto;
+}
 
-    <style>
-        #china-map {
-            width: 1000px;
-            height: 1000px;
-            margin: auto;
-        }
-        
-        #box {
-            display: none;
-            background-color: goldenrod;
-            width: 180px;
-            height: 30px;
-        }
-        
-        #box-title {
-            display: block;
-        }
-    </style>
+#box {
+	display: none;
+	background-color: goldenrod;
+	width: 180px;
+	height: 30px;
+}
 
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/echarts.min.js"></script>
-    <script type="text/javascript" src="js/map/china.js"></script>
+#box-title {
+	display: block;
+}
+
+#buttons {
+	margin-left: 260px;
+}
+</style>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/echarts.min.js"></script>
+<script type="text/javascript" src="js/map/china.js"></script>
 </head>
 <body>
-	<div style="text-align: center; clear: both;">
-		<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
-		<script src="/follow.js" type="text/javascript"></script>
-	</div>
-	<button id="back">返回全国</button>
 
-	
-	<form action="indexRes.jsp" style="display: none;" id="province">
-		<div id="yz" name="yz">全国</div>
-		<input id="province_value" name="province_value" type="text"
-			value="测试">
-		<button type="submit">选择</button>
-	</form>
-	<div id="china-map"></div>
+
+	<div id="map">
+		<div style="text-align: center; clear: both;">
+			<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+			<script src="/follow.js" type="text/javascript"></script>
+		</div>
+		<div id="buttons">
+			<button id="back">返回全国</button>
+			<form action="dateChooseProvince.jsp" style="display: none;" id="province">
+				<span>是否查看</span> <span id="yz" name="yz" style="font-size: 20px;">全国</span>
+				<span>详细数据</span> 
+				<input id="province_value" name="province_value"
+					type="text" value="测试" style="display: none;">
+				<button type="submit">确定</button>
+			</form>
+
+		</div>
+		<h1 style="text-align: center;"><%=date%>疫情</h1>
+		<div id="china-map"></div>
+	</div>
+
 	<script>
 		//地图使用的JavaScript
 		var myChart = echarts.init(document.getElementById('china-map'));
@@ -82,106 +92,140 @@
 				'北京', '天津', '重庆', '香港', '澳门' ];
 		var seriesData = [ {
 			name : '北京',
-			value : 100
+			value :
+	<%=cmd_run.get_province("北京").ip%>
 		}, {
 			name : '天津',
-			value : 0
+			value :
+	<%=cmd_run.get_province("天津").ip%>
 		}, {
 			name : '上海',
-			value : 60
+			value :
+	<%=cmd_run.get_province("上海").ip%>
 		}, {
 			name : '重庆',
-			value : 0
+			value :
+	<%=cmd_run.get_province("重庆").ip%>
 		}, {
 			name : '河北',
-			value : 60
+			value :
+	<%=cmd_run.get_province("河北").ip%>
 		}, {
 			name : '河南',
-			value : 60
+			value :
+	<%=cmd_run.get_province("河南").ip%>
 		}, {
 			name : '云南',
-			value : 0
+			value :
+	<%=cmd_run.get_province("云南").ip%>
 		}, {
 			name : '辽宁',
-			value : 0
+			value :
+	<%=cmd_run.get_province("辽宁").ip%>
 		}, {
 			name : '黑龙江',
-			value : 0
+			value :
+	<%=cmd_run.get_province("黑龙江").ip%>
 		}, {
 			name : '湖南',
-			value : 60
+			value :
+	<%=cmd_run.get_province("湖南").ip%>
 		}, {
 			name : '安徽',
-			value : 0
+			value :
+	<%=cmd_run.get_province("安徽").ip%>
 		}, {
 			name : '山东',
-			value : 60
+			value :
+	<%=cmd_run.get_province("山东").ip%>
 		}, {
 			name : '新疆',
-			value : 0
+			value :
+	<%=cmd_run.get_province("新疆").ip%>
 		}, {
 			name : '江苏',
-			value : 0
+			value :
+	<%=cmd_run.get_province("江苏").ip%>
 		}, {
 			name : '浙江',
-			value : 111
+			value :
+	<%=cmd_run.get_province("浙江").ip%>
 		}, {
 			name : '江西',
-			value : 0
+			value :
+	<%=cmd_run.get_province("江西").ip%>
 		}, {
 			name : '湖北',
-			value : 60
+			value :
+	<%=cmd_run.get_province("湖北").ip%>
 		}, {
 			name : '广西',
-			value : 60
+			value :
+	<%=cmd_run.get_province("广西").ip%>
 		}, {
 			name : '甘肃',
-			value : 0
+			value :
+	<%=cmd_run.get_province("甘肃").ip%>
 		}, {
 			name : '山西',
-			value : 60
+			value :
+	<%=cmd_run.get_province("山西").ip%>
 		}, {
 			name : '内蒙古',
-			value : 0
+			value :
+	<%=cmd_run.get_province("内蒙古").ip%>
 		}, {
 			name : '陕西',
-			value : 0
+			value :
+	<%=cmd_run.get_province("陕西").ip%>
 		}, {
 			name : '吉林',
-			value : 0
+			value :
+	<%=cmd_run.get_province("吉林").ip%>
 		}, {
 			name : '福建',
-			value : 0
+			value :
+	<%=cmd_run.get_province("福建").ip%>
 		}, {
 			name : '贵州',
-			value : 0
+			value :
+	<%=cmd_run.get_province("贵州").ip%>
 		}, {
 			name : '广东',
-			value : 597
+			value :
+	<%=cmd_run.get_province("广东").ip%>
 		}, {
 			name : '青海',
-			value : 0
+			value :
+	<%=cmd_run.get_province("青海").ip%>
 		}, {
 			name : '西藏',
-			value : 0
+			value :
+	<%=cmd_run.get_province("西藏").ip%>
 		}, {
 			name : '四川',
-			value : 60
+			value :
+	<%=cmd_run.get_province("四川").ip%>
 		}, {
 			name : '宁夏',
-			value : 0
+			value :
+	<%=cmd_run.get_province("宁夏").ip%>
 		}, {
 			name : '海南',
-			value : 60
+			value :
+	<%=cmd_run.get_province("海南").ip%>
 		}, {
 			name : '台湾',
-			value : 0
+			value :
+	<%=cmd_run.get_province("台湾").ip%>
 		}, {
 			name : '香港',
-			value : 0
+			value :
+	<%=cmd_run.get_province("香港").ip%>
 		}, {
 			name : '澳门',
-			value : 0
+			value :
+	<%=cmd_run.get_province("澳门").ip%>
 		} ];
 		oBack.onclick = function() {
 			document.getElementById("yz").innerHTML = "中国";

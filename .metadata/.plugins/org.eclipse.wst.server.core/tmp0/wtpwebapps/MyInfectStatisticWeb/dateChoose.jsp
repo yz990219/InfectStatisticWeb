@@ -40,7 +40,7 @@
 				</select>
 			</div>
 			<div style="margin-top: 20px">
-				<button type="submit">选择</button>
+				<button type="submit">确定</button>
 			</div>
 
 		</form>
