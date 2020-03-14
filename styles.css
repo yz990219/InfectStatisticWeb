@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-=======
-html, body {
-    height: 100%;
-}
-
->>>>>>> parent of 41ca52c... commit_08_yz
 body {
   margin:0px;
   background-image:none;
@@ -14,24 +7,8 @@ body {
   margin-left:auto;
   margin-right:auto;
   text-align:left;
-<<<<<<< HEAD
-=======
 }
 
-#base {
-  position:absolute;
-  z-index:0;
-}
-
-.a {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:0px;
-  height:0px;
->>>>>>> parent of 41ca52c... commit_08_yz
-}
 #pic_box {
   border-width:0px;
   position:absolute;
@@ -44,56 +21,19 @@ body {
   border-width:0px;
   position:absolute;
   left:52px;
-<<<<<<< HEAD
   top:0px;
-=======
-  top:-1px;
->>>>>>> parent of 41ca52c... commit_08_yz
   width:1160px;
   height:647px;
   display:flex;
 }
-<<<<<<< HEAD
 .text1 {
-=======
-#pic .text {
->>>>>>> parent of 41ca52c... commit_08_yz
   position:absolute;
   align-self:center;
   padding:2px 2px 2px 2px;
   box-sizing:border-box;
   width:100%;
-<<<<<<< HEAD
-=======
 }
 
-#pic_text {
-  border-width:0px;
-  word-wrap:break-word;
-  text-transform:none;
-  visibility:hidden;
-}
-#tit_box {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:440px;
-  height:126px;
-  background:inherit;
-  background-color:rgba(255, 255, 255, 0);
-  border:none;
-  border-radius:0px;
-  -moz-box-shadow:none;
-  -webkit-box-shadow:none;
-  box-shadow:none;
-  font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;
-  font-weight:700;
-  font-style:normal;
-  font-size:108px;
-  color:#FFFFFF;
->>>>>>> parent of 41ca52c... commit_08_yz
-}
 #tit {
   border-width:0px;
   position:absolute;
@@ -108,24 +48,12 @@ body {
   font-size:108px;
   color:#FFFFFF;
 }
-<<<<<<< HEAD
 .text2 {
-=======
-#tit .text {
->>>>>>> parent of 41ca52c... commit_08_yz
   position:absolute;
   align-self:flex-start;
   padding:0px 0px 0px 0px;
   box-sizing:border-box;
   width:100%;
-<<<<<<< HEAD
-=======
-}
-#tit_text {
-  border-width:0px;
-  word-wrap:break-word;
-  text-transform:none;
->>>>>>> parent of 41ca52c... commit_08_yz
 }
 
 #all_box {
@@ -134,11 +62,7 @@ body {
   left:0px;
   top:0px;
   width:989px;
-<<<<<<< HEAD
   height:406px;
-=======
-  height:620px;
->>>>>>> parent of 41ca52c... commit_08_yz
   background:inherit;
   background-color:rgba(255, 255, 255, 1);
   box-sizing:border-box;
@@ -156,476 +80,94 @@ body {
   left:149px;
   top:475px;
   width:989px;
-<<<<<<< HEAD
   height:406px;
   display:flex;
-=======
-  height:620px;
-  display:flex;
-}
-#all .text {
-  position:absolute;
-  align-self:center;
-  padding:2px 2px 2px 2px;
-  box-sizing:border-box;
-  width:100%;
-}
-#all_text {
-  border-width:0px;
-  word-wrap:break-word;
-  text-transform:none;
-  visibility:hidden;
 }
 
-#severe_box {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:134px;
-  height:32px;
-  background:inherit;
-  background-color:rgba(255, 255, 255, 0);
-  border:none;
-  border-radius:0px;
-  -moz-box-shadow:none;
-  -webkit-box-shadow:none;
-  box-shadow:none;
-  font-size:28px;
-}
-#severe {
-  border-width:0px;
-  position:absolute;
-  left:856px;
-  top:665px;
-  width:134px;
-  height:32px;
-  display:flex;
-  font-size:28px;
-}
-#severe .text {
-  position:absolute;
-  align-self:flex-start;
-  padding:0px 0px 0px 0px;
-  box-sizing:border-box;
-  width:100%;
-}
-#severe_text {
-  border-width:0px;
-  word-wrap:break-word;
-  text-transform:none;
-}
-#sp_box {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:134px;
-  height:32px;
-  background:inherit;
-  background-color:rgba(255, 255, 255, 0);
-  border:none;
-  border-radius:0px;
-  -moz-box-shadow:none;
-  -webkit-box-shadow:none;
-  box-shadow:none;
-  font-size:28px;
->>>>>>> parent of 41ca52c... commit_08_yz
-}
 #sp {
   border-width:0px;
   position:absolute;
-<<<<<<< HEAD
   left:485px;
-=======
-  left:598px;
->>>>>>> parent of 41ca52c... commit_08_yz
   top:665px;
   width:134px;
   height:32px;
   display:flex;
   font-size:28px;
-<<<<<<< HEAD
-=======
 }
-#sp .text {
-  position:absolute;
-  align-self:flex-start;
-  padding:0px 0px 0px 0px;
-  box-sizing:border-box;
-  width:100%;
-}
-#sp_text {
-  border-width:0px;
-  word-wrap:break-word;
-  text-transform:none;
-}
-#ip_box {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:134px;
-  height:32px;
-  background:inherit;
-  background-color:rgba(255, 255, 255, 0);
-  border:none;
-  border-radius:0px;
-  -moz-box-shadow:none;
-  -webkit-box-shadow:none;
-  box-shadow:none;
-  font-size:28px;
->>>>>>> parent of 41ca52c... commit_08_yz
-}
+
 #ip {
   border-width:0px;
   position:absolute;
-<<<<<<< HEAD
   left:241px;
-=======
-  left:330px;
->>>>>>> parent of 41ca52c... commit_08_yz
   top:665px;
   width:134px;
   height:32px;
   display:flex;
   font-size:28px;
-<<<<<<< HEAD
-=======
 }
-#ip .text {
-  position:absolute;
-  align-self:flex-start;
-  padding:0px 0px 0px 0px;
-  box-sizing:border-box;
-  width:100%;
-}
-#ip_text {
-  border-width:0px;
-  word-wrap:break-word;
-  text-transform:none;
-}
-#cure_box {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:134px;
-  height:32px;
-  background:inherit;
-  background-color:rgba(255, 255, 255, 0);
-  border:none;
-  border-radius:0px;
-  -moz-box-shadow:none;
-  -webkit-box-shadow:none;
-  box-shadow:none;
-  font-size:28px;
->>>>>>> parent of 41ca52c... commit_08_yz
-}
+
 #cure {
   border-width:0px;
   position:absolute;
-<<<<<<< HEAD
   left:948px;
   top:665px;
-=======
-  left:735px;
-  top:878px;
->>>>>>> parent of 41ca52c... commit_08_yz
   width:134px;
   height:32px;
   display:flex;
   font-size:28px;
-<<<<<<< HEAD
-=======
 }
-#cure .text {
-  position:absolute;
-  align-self:flex-start;
-  padding:0px 0px 0px 0px;
-  box-sizing:border-box;
-  width:100%;
-}
-#cure_text {
-  border-width:0px;
-  word-wrap:break-word;
-  text-transform:none;
-}
-#dead_box {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:134px;
-  height:32px;
-  background:inherit;
-  background-color:rgba(255, 255, 255, 0);
-  border:none;
-  border-radius:0px;
-  -moz-box-shadow:none;
-  -webkit-box-shadow:none;
-  box-shadow:none;
-  font-size:28px;
->>>>>>> parent of 41ca52c... commit_08_yz
-}
+
 #dead {
   border-width:0px;
   position:absolute;
-<<<<<<< HEAD
   left:725px;
   top:665px;
-=======
-  left:452px;
-  top:878px;
->>>>>>> parent of 41ca52c... commit_08_yz
   width:134px;
   height:32px;
   display:flex;
   font-size:28px;
-<<<<<<< HEAD
-=======
-}
-#dead .text {
-  position:absolute;
-  align-self:flex-start;
-  padding:0px 0px 0px 0px;
-  box-sizing:border-box;
-  width:100%;
-}
-#dead_text {
-  border-width:0px;
-  word-wrap:break-word;
-  text-transform:none;
 }
 
-#ips_box {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:228px;
-  height:100px;
-  background:inherit;
-  background-color:rgba(255, 255, 255, 0);
-  border:none;
-  border-radius:0px;
-  -moz-box-shadow:none;
-  -webkit-box-shadow:none;
-  box-shadow:none;
->>>>>>> parent of 41ca52c... commit_08_yz
-}
 #ips {
   border-width:0px;
   position:absolute;
-<<<<<<< HEAD
   left:194px;
-=======
-  left:285px;
->>>>>>> parent of 41ca52c... commit_08_yz
   top:707px;
   width:228px;
   height:100px;
   display:flex;
-<<<<<<< HEAD
-=======
 }
-#ips .text {
-  position:absolute;
-  align-self:flex-start;
-  padding:0px 0px 0px 0px;
-  box-sizing:border-box;
-  width:100%;
-}
-#ips_text {
-  border-width:0px;
-  word-wrap:break-word;
-  text-transform:none;
-}
-#cures_box {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:228px;
-  height:100px;
-  background:inherit;
-  background-color:rgba(255, 255, 255, 0);
-  border:none;
-  border-radius:0px;
-  -moz-box-shadow:none;
-  -webkit-box-shadow:none;
-  box-shadow:none;
->>>>>>> parent of 41ca52c... commit_08_yz
-}
+
 #cures {
   border-width:0px;
   position:absolute;
-<<<<<<< HEAD
   left:901px;
   top:707px;
   width:228px;
   height:100px;
   display:flex;
-=======
-  left:691px;
-  top:921px;
-  width:228px;
-  height:100px;
-  display:flex;
 }
-#cures .text {
-  position:absolute;
-  align-self:flex-start;
-  padding:0px 0px 0px 0px;
-  box-sizing:border-box;
-  width:100%;
-}
-#cures_text {
-  border-width:0px;
-  word-wrap:break-word;
-  text-transform:none;
-}
-#deads_box {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:228px;
-  height:100px;
-  background:inherit;
-  background-color:rgba(255, 255, 255, 0);
-  border:none;
-  border-radius:0px;
-  -moz-box-shadow:none;
-  -webkit-box-shadow:none;
-  box-shadow:none;
->>>>>>> parent of 41ca52c... commit_08_yz
-}
+
 #deads {
   border-width:0px;
   position:absolute;
-<<<<<<< HEAD
   left:693px;
-=======
-  left:423px;
-  top:921px;
-  width:228px;
-  height:100px;
-  display:flex;
-}
-#deads .text {
-  position:absolute;
-  align-self:flex-start;
-  padding:0px 0px 0px 0px;
-  box-sizing:border-box;
-  width:100%;
-}
-#deads_text {
-  border-width:0px;
-  word-wrap:break-word;
-  text-transform:none;
-}
-#severes_box {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:228px;
-  height:100px;
-  background:inherit;
-  background-color:rgba(255, 255, 255, 0);
-  border:none;
-  border-radius:0px;
-  -moz-box-shadow:none;
-  -webkit-box-shadow:none;
-  box-shadow:none;
-}
-#severes {
-  border-width:0px;
-  position:absolute;
-  left:830px;
->>>>>>> parent of 41ca52c... commit_08_yz
   top:707px;
   width:228px;
   height:100px;
   display:flex;
-<<<<<<< HEAD
-=======
 }
-#severes .text {
-  position:absolute;
-  align-self:flex-start;
-  padding:0px 0px 0px 0px;
-  box-sizing:border-box;
-  width:100%;
-}
-#severes_text {
-  border-width:0px;
-  word-wrap:break-word;
-  text-transform:none;
-}
-#sps_box {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:228px;
-  height:100px;
-  background:inherit;
-  background-color:rgba(255, 255, 255, 0);
-  border:none;
-  border-radius:0px;
-  -moz-box-shadow:none;
-  -webkit-box-shadow:none;
-  box-shadow:none;
->>>>>>> parent of 41ca52c... commit_08_yz
-}
+
 #sps {
   border-width:0px;
   position:absolute;
-<<<<<<< HEAD
   left:444px;
-=======
-  left:559px;
->>>>>>> parent of 41ca52c... commit_08_yz
   top:707px;
   width:228px;
   height:100px;
   display:flex;
-<<<<<<< HEAD
-=======
-}
-#sps .text {
-  position:absolute;
-  align-self:flex-start;
-  padding:0px 0px 0px 0px;
-  box-sizing:border-box;
-  width:100%;
-}
-#sps_text {
-  border-width:0px;
-  word-wrap:break-word;
-  text-transform:none;
 }
 
-#date_box {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:241px;
-  height:18px;
-  background:inherit;
-  background-color:rgba(255, 255, 255, 0);
-  border:none;
-  border-radius:0px;
-  -moz-box-shadow:none;
-  -webkit-box-shadow:none;
-  box-shadow:none;
-  font-size:16px;
-  color:#AAAAAA;
->>>>>>> parent of 41ca52c... commit_08_yz
-}
 #date {
   border-width:0px;
   position:absolute;
@@ -636,51 +178,13 @@ body {
   display:flex;
   font-size:16px;
   color:#AAAAAA;
-<<<<<<< HEAD
-=======
 }
-#date .text {
-  position:absolute;
-  align-self:flex-start;
-  padding:0px 0px 0px 0px;
-  box-sizing:border-box;
-  width:100%;
-}
-#date_text {
-  border-width:0px;
-  word-wrap:break-word;
-  text-transform:none;
-}
-#data_box {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:450px;
-  height:120px;
-  background:inherit;
-  background-color:rgba(255, 255, 255, 0);
-  border:none;
-  border-radius:0px;
-  -moz-box-shadow:none;
-  -webkit-box-shadow:none;
-  box-shadow:none;
-  font-family:'华文彩云', sans-serif;
-  font-weight:400;
-  font-style:normal;
-  font-size:90px;
->>>>>>> parent of 41ca52c... commit_08_yz
-}
+
 #data {
   border-width:0px;
   position:absolute;
-<<<<<<< HEAD
   left:394px;
   top:518px;
-=======
-  left:392px;
-  top:531px;
->>>>>>> parent of 41ca52c... commit_08_yz
   width:450px;
   height:120px;
   display:flex;
@@ -688,58 +192,7 @@ body {
   font-weight:400;
   font-style:normal;
   font-size:90px;
-<<<<<<< HEAD
 }
-=======
-}
-#data .text {
-  position:absolute;
-  align-self:flex-start;
-  padding:0px 0px 0px 0px;
-  box-sizing:border-box;
-  width:100%;
-}
-#data_text {
-  border-width:0px;
-  white-space:nowrap;
-  text-transform:none;
-}
-
-
-
-
-.model {
-  font-family:'Arial Normal', 'Arial', sans-serif;
-  font-weight:400;
-  font-style:normal;
-  font-size:13px;
-  letter-spacing:normal;
-  color:#333333;
-  vertical-align:none;
-  text-align:center;
-  line-height:normal;
-  text-transform:none;
-}
-
-
-.title {
-  font-family:'Arial Normal', 'Arial', sans-serif;
-  font-weight:bold;
-  font-style:normal;
-  font-size:32px;
-  text-align:left;
-}
-
-.label {
-  font-size:14px;
-  text-align:left;
-}
-.para {
-  text-align:left;
-}
-
-
->>>>>>> parent of 41ca52c... commit_08_yz
 p {
     margin: 0px;
     text-rendering: optimizeLegibility;
@@ -749,392 +202,3 @@ p {
     -moz-font-feature-settings: "kern=1";
     font-kerning: normal;
 }
-<<<<<<< HEAD
-=======
-
-
-
-#pro_box {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:989px;
-  height:406px;
-  background:inherit;
-  background-color:rgba(255, 255, 255, 1);
-  box-sizing:border-box;
-  border-width:1px;
-  border-style:solid;
-  border-color:rgba(121, 121, 121, 1);
-  border-radius:35px;
-  -moz-box-shadow:none;
-  -webkit-box-shadow:none;
-  box-shadow:none;
-}
-#pro {
-  border-width:0px;
-  position:absolute;
-  left:149px;
-  top:475px;
-  width:989px;
-  height:406px;
-  display:flex;
-}
-#pro .text {
-  position:absolute;
-  align-self:center;
-  padding:2px 2px 2px 2px;
-  box-sizing:border-box;
-  width:100%;
-}
-#pro_text {
-  border-width:0px;
-  word-wrap:break-word;
-  text-transform:none;
-  visibility:hidden;
-}
-
-
-#pro_sp_box {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:134px;
-  height:32px;
-  background:inherit;
-  background-color:rgba(255, 255, 255, 0);
-  border:none;
-  border-radius:0px;
-  -moz-box-shadow:none;
-  -webkit-box-shadow:none;
-  box-shadow:none;
-  font-size:28px;
-}
-#pro_sp {
-  border-width:0px;
-  position:absolute;
-  left:485px;
-  top:665px;
-  width:134px;
-  height:32px;
-  display:flex;
-  font-size:28px;
-}
-#pro_sp .text {
-  position:absolute;
-  align-self:flex-start;
-  padding:0px 0px 0px 0px;
-  box-sizing:border-box;
-  width:100%;
-}
-#pro_sp_text {
-  border-width:0px;
-  word-wrap:break-word;
-  text-transform:none;
-}
-#pro_ip_box {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:134px;
-  height:32px;
-  background:inherit;
-  background-color:rgba(255, 255, 255, 0);
-  border:none;
-  border-radius:0px;
-  -moz-box-shadow:none;
-  -webkit-box-shadow:none;
-  box-shadow:none;
-  font-size:28px;
-}
-#pro_ip {
-  border-width:0px;
-  position:absolute;
-  left:241px;
-  top:665px;
-  width:134px;
-  height:32px;
-  display:flex;
-  font-size:28px;
-}
-#pro_ip .text {
-  position:absolute;
-  align-self:flex-start;
-  padding:0px 0px 0px 0px;
-  box-sizing:border-box;
-  width:100%;
-}
-#pro_ip_text {
-  border-width:0px;
-  word-wrap:break-word;
-  text-transform:none;
-}
-#pro_cure_box {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:134px;
-  height:32px;
-  background:inherit;
-  background-color:rgba(255, 255, 255, 0);
-  border:none;
-  border-radius:0px;
-  -moz-box-shadow:none;
-  -webkit-box-shadow:none;
-  box-shadow:none;
-  font-size:28px;
-}
-#pro_cure {
-  border-width:0px;
-  position:absolute;
-  left:948px;
-  top:665px;
-  width:134px;
-  height:32px;
-  display:flex;
-  font-size:28px;
-}
-#pro_cure .text {
-  position:absolute;
-  align-self:flex-start;
-  padding:0px 0px 0px 0px;
-  box-sizing:border-box;
-  width:100%;
-}
-#pro_cure_text {
-  border-width:0px;
-  word-wrap:break-word;
-  text-transform:none;
-}
-#pro_dead_box {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:134px;
-  height:32px;
-  background:inherit;
-  background-color:rgba(255, 255, 255, 0);
-  border:none;
-  border-radius:0px;
-  -moz-box-shadow:none;
-  -webkit-box-shadow:none;
-  box-shadow:none;
-  font-size:28px;
-}
-#pro_dead {
-  border-width:0px;
-  position:absolute;
-  left:725px;
-  top:665px;
-  width:134px;
-  height:32px;
-  display:flex;
-  font-size:28px;
-}
-#pro_dead .text {
-  position:absolute;
-  align-self:flex-start;
-  padding:0px 0px 0px 0px;
-  box-sizing:border-box;
-  width:100%;
-}
-#pro_dead_text {
-  border-width:0px;
-  word-wrap:break-word;
-  text-transform:none;
-}
-#pro_ips_box {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:228px;
-  height:100px;
-  background:inherit;
-  background-color:rgba(255, 255, 255, 0);
-  border:none;
-  border-radius:0px;
-  -moz-box-shadow:none;
-  -webkit-box-shadow:none;
-  box-shadow:none;
-}
-#pro_ips {
-  border-width:0px;
-  position:absolute;
-  left:194px;
-  top:707px;
-  width:228px;
-  height:100px;
-  display:flex;
-}
-#u10 .text {
-  position:absolute;
-  align-self:flex-start;
-  padding:0px 0px 0px 0px;
-  box-sizing:border-box;
-  width:100%;
-}
-#pro_ips_text {
-  border-width:0px;
-  word-wrap:break-word;
-  text-transform:none;
-}
-#pro_cures_box {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:228px;
-  height:100px;
-  background:inherit;
-  background-color:rgba(255, 255, 255, 0);
-  border:none;
-  border-radius:0px;
-  -moz-box-shadow:none;
-  -webkit-box-shadow:none;
-  box-shadow:none;
-}
-#pro_cures {
-  border-width:0px;
-  position:absolute;
-  left:901px;
-  top:707px;
-  width:228px;
-  height:100px;
-  display:flex;
-}
-#pro_cures .text {
-  position:absolute;
-  align-self:flex-start;
-  padding:0px 0px 0px 0px;
-  box-sizing:border-box;
-  width:100%;
-}
-#pro_cures_text {
-  border-width:0px;
-  word-wrap:break-word;
-  text-transform:none;
-}
-#pro_deads_box {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:228px;
-  height:100px;
-  background:inherit;
-  background-color:rgba(255, 255, 255, 0);
-  border:none;
-  border-radius:0px;
-  -moz-box-shadow:none;
-  -webkit-box-shadow:none;
-  box-shadow:none;
-}
-#pro_deads {
-  border-width:0px;
-  position:absolute;
-  left:693px;
-  top:707px;
-  width:228px;
-  height:100px;
-  display:flex;
-}
-#pro_deads .text {
-  position:absolute;
-  align-self:flex-start;
-  padding:0px 0px 0px 0px;
-  box-sizing:border-box;
-  width:100%;
-}
-#pro_deads_text {
-  border-width:0px;
-  word-wrap:break-word;
-  text-transform:none;
-}
-#pro_sps_box {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:228px;
-  height:100px;
-  background:inherit;
-  background-color:rgba(255, 255, 255, 0);
-  border:none;
-  border-radius:0px;
-  -moz-box-shadow:none;
-  -webkit-box-shadow:none;
-  box-shadow:none;
-}
-#pro_sps {
-  border-width:0px;
-  position:absolute;
-  left:444px;
-  top:707px;
-  width:228px;
-  height:100px;
-  display:flex;
-}
-#pro_sps .text {
-  position:absolute;
-  align-self:flex-start;
-  padding:0px 0px 0px 0px;
-  box-sizing:border-box;
-  width:100%;
-}
-#pro_sps_text {
-  border-width:0px;
-  word-wrap:break-word;
-  text-transform:none;
-}
-
-#pro_data_box {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:450px;
-  height:120px;
-  background:inherit;
-  background-color:rgba(255, 255, 255, 0);
-  border:none;
-  border-radius:0px;
-  -moz-box-shadow:none;
-  -webkit-box-shadow:none;
-  box-shadow:none;
-  font-family:'华文彩云', sans-serif;
-  font-weight:400;
-  font-style:normal;
-  font-size:90px;
-}
-#pro_data {
-  border-width:0px;
-  position:absolute;
-  left:394px;
-  top:518px;
-  width:450px;
-  height:120px;
-  display:flex;
-  font-family:'华文彩云', sans-serif;
-  font-weight:400;
-  font-style:normal;
-  font-size:90px;
-}
-#pro_data .text {
-  position:absolute;
-  align-self:flex-start;
-  padding:0px 0px 0px 0px;
-  box-sizing:border-box;
-  width:100%;
-}
-#pro_data_text {
-  border-width:0px;
-  white-space:nowrap;
-  text-transform:none;
-}
->>>>>>> parent of 41ca52c... commit_08_yz
